@@ -81,7 +81,7 @@ a {
         }
     }
 }
-
+}
 .search {
   display: flex;
   ileng-items: center;
@@ -96,6 +96,72 @@ a {
     padding-right: 0.5rem;
   }
 
+  &__form {
+    background: none;
+    border: none;
+    transition: width 0.3s;
+    width: 3rem;
+    font: 0.9rem/1 'Open Sans', 'sans-serif';
+    padding: 0.2rem 0.5rem;
+    border-redius: 5px;
+
+    &::placeholder {
+      color: white;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+      width: 10rem;
+      background: white
+    }
+  }
 }
 
+.section__main {
+      display:flex;
+      aling-items: center;
+      flex-direction: column;
+      position: absolute;
+      left: $main_shift;
+      right: $main_shift;
+      top: 14vw;
+
 }
+
+.main-title {
+      font-size: 1rem;
+      margin-bottom: 6.2em;
+
+      &__summery {
+        font-weight: 700;
+         color: $main_highlite;
+         text-transfon: uppercase;
+         display: flex;
+         aling-items: center;
+         margin-bottom:1.5em;
+        letter-spacing: .34em;
+
+        &::before {
+          content: '';
+          display:block;
+          width: 4em;
+          height: 3px;
+          margin-right: 1.5em;
+          background: $main_highlite;
+          margin-top: 14px;
+        }
+      }
+      &__text {
+        font-size: 5.4em;
+        font-weight: 700;
+        line-height: 1.1;
+
+        &_regular {
+          display: block;
+          font-size: 0.9em;
+          font-weight: 400;
+        }
+      }
+}
+
+
