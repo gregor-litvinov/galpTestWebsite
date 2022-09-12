@@ -56,7 +56,10 @@ html(lang="ru")
                              p You will be amazed if you take part in this sailing Komodo islang tour packege. So it is also mandatoryfor you, besides enjoying Komodo Island, you else heve to taste the marine tourism.
                       a.arrow-link(href="#") read more
                           .arrow-link__icon.ikon__arrow_rightard
-
+          section.section
+                #gallery.gallery
+                    each imageUrl in ['/images/gallery.jpg', '/images/gallery.jpg', '/images/gallery.jpg']
+                        .gallery__slide(style={'background-image': `url("${imageUrl}")`})
 
 
 
